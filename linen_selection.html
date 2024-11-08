@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linen Selection</title>
+    <link rel="stylesheet" href="assets/styles/linen_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LINEN SELECTION</h1>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <label for="type">Type of Linen:</label>
+            <select id="type" onchange="filterLinen()">
+                <option value="">All</option>
+                <option value="tablecloth">Tablecloth</option>
+                <option value="napkin">Napkin</option>
+                <option value="skirting">Skirting</option>
+                <option value="coverchair">Coverchair</option>
+            </select>
+
+            <label for="shape">Shape (For Tablecloth):</label>
+            <select id="shape" onchange="filterLinen()">
+                <option value="">All</option>
+                <option value="square">Square</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+            </select>
+
+            <label for="name">Linen Name:</label>
+            <input type="text" id="name" placeholder="Search by name..." onkeyup="filterLinen()">
+        </div>
+
+        <!-- Results Section -->
+        <div id="linen-results">
+            <!-- Filtered linens will appear here -->
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button onclick="goToBorang()">APPLICATION FORM</button>
+            <button onclick="viewCart()">VIEW CART</button>
+            <button onclick="goToHome()">HOME PAGE</button>
+        </div>
+
+    </div>
+
+    <script src="assets/scripts/linen_app.js"></script>
+</body>
+</html>

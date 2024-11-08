@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Permohonan</title>
+    <link rel="stylesheet" href="assets/styles/borang_permohonan.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LIMAS APPLICATION FORM</h1>
+        <p>
+            Note: Please complete the form below according to the specified type of application. Please fill in the details and click the save button.
+        </p>
+
+        <form id="permohonanForm">
+            <label for="butiran">FULL NAME:</label>
+            <input type="text" id="butiran" name="butiran" readonly>
+
+            <label for="phone">PHONE NUMBER:</label>
+            <input type="text" id="phone" name="phone" readonly>
+
+            <label for="matrix">MATRIC NO:</label>
+            <input type="text" id="matrix" name="matrix" readonly>
+
+            <label for="kelas">CLASS:</label>
+            <input type="text" id="kelas" name="kelas" required>
+
+            <label for="tarikh_pinjam">REQUESTED DATE:</label>
+            <input type="date" id="tarikh_pinjam" name="tarikh_pinjam" required>
+
+            <label for="tarikh_pemulangan">RETURNED DATE:</label>
+            <input type="date" id="tarikh_pemulangan" name="tarikh_pemulangan" required>
+
+            <div class="buttons">
+                <button type="button" onclick="goToHome()">HOME PAGE</button>
+                <button type="submit">NEXT</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/scripts/borang_app.js"></script>
+</body>
+</html>

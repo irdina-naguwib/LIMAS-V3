@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="assets/styles/admin_home.css">
+</head>
+<body>
+    <h1>WELCOME: <span id="admin"></span></h1>
+
+    <label for="statusFilter">Filter by Status:</label>
+    <select id="statusFilter" onchange="filterTable()">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="approved">Approved</option>
+        <option value="returned">Returned</option>
+        <option value="accepted">Accepted</option>
+        <option value="late">Late Return</option>
+    </select>
+
+    <label for="dateOrder">Order by Date:</label>
+    <select id="dateOrder" onchange="filterTable()">
+        <option value="latest">Latest to Oldest</option>
+        <option value="oldest">Oldest to Latest</option>
+    </select>
+
+    <table id="borrowedItemsTable">
+        <thead>
+            <tr>
+                <th>DETAILS</th>
+                <th>REQUESTED DATE</th>
+                <th>RETURNED DATE</th>
+                <th>ITEMS BORROWED</th>
+                <th>STATUS</th>
+                <th>APPROVER</th>
+                <th>APPROVAL DATE</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Borrowed items will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <button id="prevPage" onclick="changePage(-1)" disabled>Previous</button>
+        <button id="nextPage" onclick="changePage(1)">Next</button>
+    </div>
+
+    <button class="button" onclick="logout()">LOG OUT</button>
+
+    <script src="assets/scripts/admin_home.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #E0E7FF, #F9FAFB);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+/* Glassmorphism-inspired login box */
+.login-box {
+    background: rgba(255, 255, 255, 0.75);  /* Semi-transparent */
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 25px;  /* More rounded */
+    border: 1px solid rgba(200, 200, 200, 0.7);
+    background-color: rgba(250, 250, 250, 0.9);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input Focus */
+input:focus {
+    border: 1px solid #007aff;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 3px 12px rgba(0, 122, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #007aff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 12px rgba(0, 91, 181, 0.5);
+}
+
+/* Sign Up Button */
+#showSignUpForm {
+    background-color: transparent;
+    color: #007aff;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#showSignUpForm:hover {
+    color: #005bb5;
+}
+
+/* Sign Up Form */
+#signUpForm {
+    margin-top: 20px;
+    display: none;
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+    }
+}

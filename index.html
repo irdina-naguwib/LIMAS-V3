@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linen Management System - Login</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>WELCOME TO THE LINEN MANAGEMENT SYSTEM (LIMAS)</h2>
+        
+        <!-- Login Form -->
+        <form id="loginForm" style="opacity: 100; display: block;">
+            <label for="id_signin">STUDENT ID/STAFF ID:</label>
+            <input type="text" id="id_signin" name="id_signin" required>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">LOG IN</button>
+        </form>
+        
+        <p id="error-message"></p>
+
+        <!-- Sign Up Button -->
+        <button id="showSignUpForm">Sign Up</button>
+        
+        <!-- Sign Up Form (Hidden by default) -->
+        <form id="signUpForm" style="display: none;">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="ic_signup">IDENTITY CARD NUMBER (IC NO):</label>
+            <input type="text" id="ic_signup" name="ic_signup" required>
+            <label for="matric">MATRIC NO:</label>
+            <input type="text" id="matric" name="matric" required>
+            <label for="phone">PHONE NUMBER:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password_signup">PASSWORD:</label>
+            <input type="password" id="password_signup" name="password_signup" required>
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>

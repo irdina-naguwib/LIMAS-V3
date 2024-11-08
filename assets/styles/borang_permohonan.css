@@ -1,0 +1,119 @@
+/* General Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    color: #333;
+}
+
+/* Stylish Container for Form */
+.container {
+    background: #fff; /* Solid white background to enhance readability */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left; /* Align text to the left for better form structure */
+    border: 1px solid #ddd; /* Subtle border */
+}
+
+h1 {
+    color: #3f2b96; /* Deep blue to complement the background */
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase; /* Uppercase header for emphasis */
+    margin-bottom: 20px;
+    text-align: center; /* Centering the title for a better focus */
+}
+
+p {
+    font-size: 16px;
+    color: #666; /* Darker text for better readability */
+    margin-bottom: 30px; /* More space before the form starts */
+    line-height: 1.5; /* Improved line spacing */
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #444; /* Slightly darker label color for contrast */
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for input fields */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Lighter background for input fields */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover {
+    border-color: #3f2b96; /* Matching the header color */
+    box-shadow: 0 0 8px rgba(63, 43, 150, 0.2); /* Subtle glow on hover */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #5a55ea; /* Brighter blue for focus */
+    box-shadow: 0 0 8px rgba(90, 85, 234, 0.25); /* More pronounced glow on focus */
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    background-color: #5a55ea; /* Bright blue to stand out */
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 10px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-weight: 600;
+    flex-grow: 1; /* Buttons grow to fill space */
+    margin: 0 10px; /* Space around buttons */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3f2b96; /* Darker blue on hover */
+    box-shadow: 0 5px 15px rgba(63, 43, 150, 0.3); /* Subtle shadow for depth */
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        gap: 10px; /* Space between stacked buttons */
+    }
+
+    button {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+}

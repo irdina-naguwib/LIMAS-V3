@@ -1,0 +1,58 @@
+{
+  "borrowed_items": [
+    {
+      "butiran": "NUR AQILAH BINTI MOHD KHAIRUDDIN",
+      "tarikh_pinjam": "2024-11-11",
+      "tarikh_pulang": "2024-11-15",
+      "items_borrowed": [
+        {
+          "name": "Skirting Dark Blue",
+          "code": "SDB06"
+        },
+        {
+          "name": "Skirting Blue",
+          "code": "SB09"
+        }
+      ],
+      "status": "pending",
+      "approver": "IDA ROHAYU",
+      "approval_date": "2024-11-08"
+    },
+    {
+      "butiran": "NUR FATIN IZZATI BINTI MUHAMAD RIZAUDIN",
+      "tarikh_pinjam": "2024-11-18",
+      "tarikh_pulang": "2024-11-22",
+      "items_borrowed": [
+        {
+          "name": "Tablecloth Square Maroon Flower",
+          "code": "TSM13"
+        },
+        {
+          "name": "Tablecloth Square Cream Flower",
+          "code": "TSC08"
+        }
+      ],
+      "status": "accepted",
+      "approver": "IDA ROHAYU",
+      "approval_date": "2024-11-08"
+    },
+    {
+      "butiran": "NUR SHAFINAZ BINTI MOHD NOOR",
+      "tarikh_pinjam": "2024-11-25",
+      "tarikh_pulang": "2024-11-29",
+      "items_borrowed": [
+        {
+          "name": "Coverchair Cream Flower",
+          "code": "CCF10"
+        },
+        {
+          "name": "Coverchair Cream Flower",
+          "code": "CCF07"
+        }
+      ],
+      "status": "returned",
+      "approver": "IDA ROHAYU",
+      "approval_date": "2024-11-08"
+    }
+  ]
+}

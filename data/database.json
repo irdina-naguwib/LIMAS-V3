@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "IDA ROHAYU",
+      "ic": "860401335160",
+      "matric": "PTSS_LIMAS",
+      "phone": "0123428096",
+      "email": "idarohayu@ptss.edu.my",
+      "password": "#LINEN",
+      "role": "admin"
+    },
+    {
+      "name": "NUR SHAFINAZ BINTI MOHD NOOR",
+      "ic": "000301020612",
+      "matric": "18DHF22F1030",
+      "phone": "0182747277",
+      "email": "shafinaznoor0612@gmail.com",
+      "password": "1234",
+      "role": "student"
+    },
+    {
+      "name": "NUR FATIN IZZATI BINTI MUHAMAD RIZAUDIN",
+      "ic": "040413020146",
+      "matric": "18DHF22F1032",
+      "phone": "01159644048",
+      "email": "nfatinizzati04@gmail.com",
+      "password": "1234",
+      "role": "student"
+    },
+    {
+      "name": "NUR AQILAH BINTI MOHD KHAIRUDDIN",
+      "ic": "000621020574",
+      "matric": "18DHF22F1052",
+      "phone": "0137019813",
+      "email": "nuraqilahkhairuddin00@gmail.com",
+      "password": "1234",
+      "role": "student"
+    }
+  ]
+}

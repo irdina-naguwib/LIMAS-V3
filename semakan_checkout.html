@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semakan Checkout</title>
+    <link rel="stylesheet" href="assets/styles/semakan_checkout.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout Approved Items</h1>
+        <div id="approved-items-container">
+            <table id="approved-items-table">
+                <thead>
+                    <tr>
+                        <th>SELECT</th>
+                        <th>DETAILS</th>
+                        <th>REQUESTED DATE</th>
+                        <th>RETURN DATE</th>
+                        <th>ITEMS BORROWED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Approved items will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <button class="button" onclick="submitCheckedItems()">SUBMIT CHECKOUT</button>
+        <button class="button" onclick="goToHome()">HOMEPAGE</button>
+    </div>
+
+    <script src="assets/scripts/semakan_checkout.js"></script>
+</body>
+</html>

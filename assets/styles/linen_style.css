@@ -1,0 +1,93 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f9; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.container {
+    max-width: 800px; 
+    margin: auto; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 12px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #007aff;
+    font-weight: 700;
+}
+
+.filters {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.label {
+    font-weight: bold; 
+}
+
+select, input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 16px; 
+}
+
+.linen-results {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.linen-item {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+}
+
+.linen-info {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.actions {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+} 
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #007aff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5; 
+}
+
+/* Image styles for auto-sizing and rounded edges */
+img {
+    max-width: 150px; /* Increased size */
+    height: auto; 
+    border-radius: 12px;
+}
